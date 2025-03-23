@@ -8,6 +8,7 @@ const color = {
     error: '#E74C3C',
     grey: 'grey',
     icon: '#BDC3C7',
+    field: '#F4F6F8',
 }
 
 export default color

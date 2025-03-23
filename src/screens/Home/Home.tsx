@@ -1,27 +1,29 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, StatusBar } from 'react-native'
 import React from 'react'
 import GreetHeader from '../../components/greetHeader/GreetHeader'
+import Message from '../../components/Message/Message'
+import SearchBar from '../../components/SearchBar/SearchBar'
+import color from '../../config/themes/colors'
 
 export default function Home() {
   return (
+    <>
+    <StatusBar animated backgroundColor="#ffffff" barStyle="dark-content" />
     <View style={styles.container}>
       <GreetHeader/>
-
-      <View>
-        <Text style={styles.text}>Discover Your Favorite Podcast🎙</Text>
-      </View>
+      <Message message="Discover Your Favorite Podcast 🎙"/>
+      <SearchBar placeholder='Find Your Suitable Podcast' />
     </View>
-    
+    </>
   )
 }
 
 const styles= StyleSheet.create({
   container:{
-    padding: 20,
+    gap: 25,
+    paddingHorizontal: 20,
+    paddingVertical: 30,
+    backgroundColor: color.baseColor,
+    flex: 1,
   },
-  text:{
-    fontSize: 30,
-    fontWeight: 500,
-    marginTop: 20,
-  }
 })
