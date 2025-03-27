@@ -33,8 +33,10 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     backgroundColor: color.field,
-    padding: 10,
+    paddingVertical: 10,
     borderRadius: 30,
+    marginHorizontal: 20,
+    paddingHorizontal: 20,
   },
   input: {
     height: 40,

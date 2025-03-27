@@ -4,6 +4,7 @@ import GreetHeader from '../../components/greetHeader/GreetHeader'
 import Message from '../../components/Message/Message'
 import SearchBar from '../../components/SearchBar/SearchBar'
 import color from '../../config/themes/colors'
+import TrendingCard from '../../components/trendingCard/TrendingCard'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <GreetHeader/>
       <Message message="Discover Your Favorite Podcast 🎙"/>
       <SearchBar placeholder='Find Your Suitable Podcast' />
+      <TrendingCard/>
     </View>
     </>
   )
@@ -21,7 +23,6 @@ export default function Home() {
 const styles= StyleSheet.create({
   container:{
     gap: 25,
-    paddingHorizontal: 20,
     paddingVertical: 30,
     backgroundColor: color.baseColor,
     flex: 1,

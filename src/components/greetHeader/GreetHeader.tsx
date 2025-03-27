@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignContent: 'center',
     alignItems: 'center',
+    paddingHorizontal: 20,
   },
   greeting: {
     display: 'flex',

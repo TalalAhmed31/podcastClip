@@ -1,4 +1,4 @@
-const dummyTrendingPodcasts = [
+export const trendingData = [
     {
       id: '1',
       title: 'Keep Connected',

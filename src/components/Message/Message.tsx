@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
     text: {
         fontSize: 30,
         fontWeight: 500,
+        paddingHorizontal: 20,
      
     },
 })
