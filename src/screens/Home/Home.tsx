@@ -5,6 +5,8 @@ import Message from '../../components/Message/Message'
 import SearchBar from '../../components/SearchBar/SearchBar'
 import color from '../../config/themes/colors'
 import TrendingCard from '../../components/trendingCard/TrendingCard'
+import Categories from '../../components/Categories/Categories'
+import Navigation from '../../components/NavBar/Navigation'
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <Message message="Discover Your Favorite Podcast 🎙"/>
       <SearchBar placeholder='Find Your Suitable Podcast' />
       <TrendingCard/>
+      <Categories />
+      <Navigation/>
     </View>
     </>
   )

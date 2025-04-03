@@ -20,4 +20,6 @@ const dummyCategories = [
       imageUrl: 'https://www.shutterstock.com/image-photo/successful-football-soccer-basketball-baseball-600nw-1034455687.jpg',
     },
   ];
+
+export default dummyCategories;
   

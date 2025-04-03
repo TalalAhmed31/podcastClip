@@ -5,12 +5,13 @@ import React from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { trendingData } from '../../data/trendingData';
 import color from '../../config/themes/colors';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const { width } = Dimensions.get('window');
 
 export default function TrendingCard() {
     return (
-        <>
+        <SafeAreaView>
         <View style={styles.header}>
             <Text style={styles.trending}>Trending Podcast</Text>
             <TouchableOpacity>
@@ -41,7 +42,7 @@ export default function TrendingCard() {
             contentContainerStyle={{ paddingHorizontal: 20 }} // Prevents first & last item cutoff
             showsHorizontalScrollIndicator={false} // Hides scrollbar
         />
-        </>
+        </SafeAreaView>
     );
 }
 
